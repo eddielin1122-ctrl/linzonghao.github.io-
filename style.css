@@ -1,26 +1,26 @@
-body { font-family: sans-serif; margin: 0; padding-bottom: 80px; background: #f4f4f4; }
-header { background: #1a1a1a; color: white; padding: 25px; text-align: center; }
-.stats-bar { display: flex; justify-content: space-around; margin-top: 15px; font-size: 0.85em; }
-.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 15px; }
-.card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.card h3 { margin-top: 0; font-size: 1.1em; color: #333; }
-.info { padding: 20px; background: white; margin: 15px; border-radius: 12px; }
+body { margin: 0; background-color: #121212; color: #ffffff; font-family: 'PingFang TC', sans-serif; padding-bottom: 100px; }
+.container { max-width: 600px; margin: auto; padding: 20px; }
+header { text-align: center; padding: 40px 0; }
 
-/* 右下角固定按鈕 */
+.logo-img { max-width: 180px; height: auto; display: block; margin: 0 auto 15px auto; }
+.hero-text { color: #cccccc; margin-bottom: 30px; font-size: 0.9em; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.stat-box { background: #1e1e1e; padding: 15px 5px; border-radius: 10px; font-size: 0.75em; border: 1px solid #333; }
+.stat-box span { font-size: 1.2em; font-weight: bold; color: #f39c12; }
+
+.services { margin-top: 30px; }
+.services h2 { border-left: 4px solid #f39c12; padding-left: 10px; margin-bottom: 20px; }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.card { background: #1e1e1e; padding: 20px; border-radius: 15px; text-align: center; border: 1px solid #333; }
+.card span { font-size: 2em; display: block; margin-bottom: 10px; }
+.card h3 { font-size: 1em; margin: 0; }
+
+/* 右下角固定懸浮按鈕 */
 .floating-line-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    background: #06C755;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(6, 199, 85, 0.5);
-    z-index: 1000;
-    transition: transform 0.3s;
+    position: fixed; bottom: 30px; right: 20px;
+    background: #06C755; width: 60px; height: 60px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4); z-index: 9999;
 }
-.floating-line-btn img { width: 35px; }
-.floating-line-btn:hover { transform: scale(1.1); }
+.floating-line-btn img { width: 35px; height: 35px; }
